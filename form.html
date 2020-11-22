@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form, select</title>
+    </head>
+<body style="background-color: black;">
+    <br>
+    <br>
+
+    <table width="100%" cellpadding="10px" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+        <tr>
+            <td width="30%"></td>
+
+            <td width="40%" style="border-radius: 5px; background-color: rgb(207, 219, 219);">
+                
+                <h2 style="text-align: center;">Register</h2>
+
+                <p style="text-align: center; color: rgb(94, 97, 94);">Stay Safe, Stay Healthy!</p><br>
+
+                <div style="text-align: center;">Select Institution: 
+                        <Select style="width: 40%; height: 30px;">
+                            <option></option>
+                            <option>Kurmitola General Hospital</option>
+                            <option>Amin Bazar Hospital</option>
+                            <option>Jinjira Specialized Hospital</option>
+                            <option>Sajida Foundation Hospital</option>
+                            <option>Mohanagar General Hospita</option>
+                            <option>Bangladesh Railway Hospital</option>
+                        </Select>
+                </div>
+                <br>
+                <form>
+
+                    <label>Personal Information<br>
+                        <hr style="border-top: dotted; color: rgb(141, 141, 141);">
+                    </label>
+                    Name<br>
+                    <input 
+                        type="text" 
+                        name="first_name" 
+                        placeholder="First Name"
+                        style="width: 48%; height: 30px;"
+                        required
+                    />  
+                    <input 
+                        type="text" 
+                        name="last_name" 
+                        placeholder="Last Name" 
+                        style="width: 48%; height: 30px;"
+                        required
+                    />
+                    <br>
+                    <br>
+                    Mobile number<br>
+                    <input 
+                        type="text"
+                        name="mobile_no"
+                        value="+880-1"
+                        style="width: 98%; height: 30px;"
+                        required
+                    />
+                    <br>
+                    <br>
+
+                    Email<br>
+                    <input 
+                        type="email" 
+                        name=" mail" 
+                        placeholder="Email address" 
+                        style="width: 98%; height: 30px;"
+                        required
+                    />
+                    <br>
+                    <br>
+
+                    Emergency Contact Number<br>
+                    <input 
+                        type="text" 
+                        name="emergency_contact" 
+                        value="+880-1" 
+                        style="width: 98%; height: 30px;"
+                        required
+                    />
+                    <br>
+                    <br>
+
+                    Address<br>
+                    <input 
+                        type="text" 
+                        name="address" 
+                        placeholder="House_no."
+                        style="width: 23%; height: 30px;"
+                        required
+                    />  
+                    <input 
+                        type="text" 
+                        name="address" 
+                        placeholder="Road" 
+                        style="width: 24%; height: 30px;"
+                        required
+                    />
+                    <input 
+                        type="text" 
+                        name="address" 
+                        placeholder="City"
+                        style="width: 25%; height: 30px;"
+                        required
+                    />
+                    <input 
+                        type="text" 
+                        name="address" 
+                        placeholder="Zip Code" 
+                        style="width: 20%; height: 30px;"
+                        required
+                    />
+                    <br>
+                    <br>
+
+                    Age: 
+                        <input
+                            type="text"
+                            name="age"
+                            placeholder="Age"
+                            style="width: 22%; height: 30px;"
+                            required
+                        />
+
+                    Gender: 
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="male"
+                        /> Male
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="female"
+                        /> Female
+                    <br>
+                    <br>
+
+                    City: 
+                        <Select style="width: 56%; height: 30px;">
+                            <option></option>
+                            <option>Dhaka</option>
+                            <option>Sylhet</option>
+                            <option>Chittagong</option>
+                            <option>Khulna</option>
+                            <option>Rajshahi</option>
+                            <option>Comilla</option>
+                        </Select>
+                    <br>
+                    <br>
+                    <br>
+                    <label>Coronavirus: COVID-19 Related<br>
+                        <hr style="border-top: dotted; color: rgb(141, 141, 141);">
+                    </label>
+                    <br>
+
+                    When did you first suspected?<br>
+                    Date: 
+                    <input 
+                        type="date" 
+                        name="Date"
+                        style="width: 42%; height: 30px;"
+                        required
+                    />
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    Time:
+                    <input 
+                        type="time"
+                        style="width: 37%; height: 30px;"
+                        required
+                    />
+                    <br>
+                    <br>
+
+                    Any previous cases? &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input 
+                        type="radio"
+                        name="record"
+                        value="on"
+                    />Yes  &nbsp; &nbsp;
+
+                    <input 
+                        type="radio"
+                        name="record"
+                        value="on"
+                    />No
+                <br>
+                <br>
+
+                Any previous medical history? &nbsp;
+                    <input 
+                        type="radio"
+                        name="record"
+                        value="on"
+                    />Yes  &nbsp; &nbsp;
+
+                    <input 
+                        type="radio"
+                        name="record"
+                        value="on"
+                    />No
+                <br>
+                <br>
+                <br>
+
+                What sypmptoms do you have?<br>
+
+                <input type="checkbox" name="sypmptoms" value="on"> &nbsp; Coughing <br>
+                <input type="checkbox" name="sypmptoms" value="on"> &nbsp; Fever/ Chills <br>
+                <input type="checkbox" name="sypmptoms" value="on"> &nbsp; Shortness of breath <br>
+                <input type="checkbox" name="sypmptoms" value="on"> &nbsp; Breathing difficulties <br>
+                <input type="checkbox" name="sypmptoms" value="on"> &nbsp; Pain or pressure in the chest <br>
+
+                <br>
+                <br>
+                
+                <div style="text-align: center;">
+                        <input 
+                            type="submit" 
+                            name="submit" 
+                            Value="Submit" 
+                            style= "text-align: center; 
+                                    border-radius: 5px; 
+                                    background-color: rgb(19, 131, 131); 
+                                    color: white; 
+                                    width: 20%; 
+                                    height: 40px; 
+                                    font-size: 100%; 
+                                    border: 0px;"
+                        />
+                    
+                </div>
+                <br>
+                
+                </form>
+
+            </td>
+
+            <td width="30%"></td>
+         </tr>
+    </table>
+</body>
+</html>
